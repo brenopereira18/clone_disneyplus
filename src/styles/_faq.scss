@@ -35,13 +35,31 @@
             &__answer {
                 height: 0;
                 overflow: hidden;
+                padding: 0 24px;
+                transition: height, .5s ease;
             }
 
             &--is-open {
                 
                 .faq__questions__item__answer {
-                    height: auto;
-                    padding: 24px;
+                    height: auto;                    
+                    padding-bottom: 24px;
+                    transition: height, .5s ease;
+
+                    ul {
+                        margin: 16px 0 0;
+                        padding: 0 0 0 40px;  
+                        
+                        li {
+                            padding: 8px 0;
+                        }
+                    }
+
+                    p { 
+                        &:nth-child(3) {
+                            margin: 16px 0 0;
+                        }
+                    }
                 }
 
                 .faq__questions__item__question::after {
