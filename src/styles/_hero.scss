@@ -1,12 +1,17 @@
 @use 'variaveis';
 
 .hero {
-    padding: 5.6vw;
+    padding: 5.6vw;    
     min-height: 80vh;
     background-image: url(../images/hero_desktop.jpeg);    
     background-size: cover; 
     text-align: center;
     background-repeat: no-repeat;
+
+    .button {
+        margin-top: 2vw;
+        margin-bottom: 8px;
+    }
     
     &__content {
         max-width: 500px;
