@@ -1,5 +1,11 @@
+@use 'variaveis';
+
 .faq {
     padding: 5.6vw;
+
+    @media (max-width: 768px) {
+        padding: 12vw 5.6vw;
+    }
 
     h2 {
         text-align: center;
@@ -11,7 +17,7 @@
         &__item {
             background-color: #13151d;
             margin-bottom: 16px;
-
+            
             &__question {
                 color: #fff;
                 font-size: 20px;
@@ -19,6 +25,15 @@
                 display: block;
                 cursor: pointer;
                 position: relative;
+                
+                @media (max-width:768px) {
+                    span {
+                        max-width: 260px;
+                        width: 100%;
+                        display: block;
+                        color: variaveis.$corTextoSecundario;
+                    }
+                }                
 
                 &::after {
                     content: '+';
@@ -29,6 +44,7 @@
                     display: flex;
                     align-items: center;
                     font-size: 40px;
+                    
                 }
             }
 

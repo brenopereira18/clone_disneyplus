@@ -3,10 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const questions = document.querySelectorAll('[data-faq-question]')
 
     const heroSection = document.querySelector('.hero')
-    const alturaHero = heroSection.clientHeight
+    const alturaHero = heroSection.clientHeight // pega a altura da seção hero
     
+    // Seção do header
     window.addEventListener('scroll', () => {
-        const posicaoAtual = window.scrollY      
+        const posicaoAtual = window.scrollY /* pega a altura do scroll em relação ao topo da página */      
 
         if (posicaoAtual < alturaHero) {
             ocultaElementosDoHeader()
